@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.tarjeta{
+
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #38240f;
+  width: 20rem;
+  border-radius: 4px;
+  background: #18171c;
+  margin-top: 15px;
+  color: #aad4ea;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+
+  width: 14rem;
+  height: 10rem;
+  border-left: 1px solid black;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.texto_tarjeta{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin-right: 5px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+
+}
+
+body{
+
+  display: flex;
+  background: #14142c;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.zonaTarjetas{
+
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tarjeta{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjeta:hover{
+
+  box-shadow: #38240f 4px 4px;
+
+}
+
+.zonaBusqueda{
+  margin-top: 10px;
+  width: 30rem;
+  height: 2rem;
+  color: #aad4ea;
+  background: #18171c;
+  border: 1px solid #835323;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+footer{
+
+  margin-top: 10px;
+  background: #14141c;
+  color: #aad4ea;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid #0f0f14;
+  width: 100%;
+
 }
